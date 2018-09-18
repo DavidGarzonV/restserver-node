@@ -42,7 +42,7 @@ let usuarioSchema = new Schema({
     }
 });
 
-//no regresar contraseña cuando se imprima por medio del json
+//no regresar contraseña cuando se haga la peticion del usuario
 usuarioSchema.methods.toJSON = function (){
     let user = this;
     let userObject = user.toObject();
